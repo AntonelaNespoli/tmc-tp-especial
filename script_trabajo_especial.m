@@ -14,7 +14,7 @@ tic
 [probabilidad, todas_las_probabilidades] = calcular_fallos_sucesivos(epsilon_a);
 
 % Muestro por pantalla la propabilidad que me dio mi motor
-fprintf('La probabilidad de exito con un Epsilon de 0.1, es: %d\n', probabilidad );
+fprintf('La probabilidad de éxito con un épsilon de 0.1, es: %d\n', probabilidad );
 fprintf('\n');
 
 % Genero el grafico
@@ -28,13 +28,13 @@ ylim([0 1]);
 legend('Evolucion de la probabilidad', 'Probabilidad analitica');
 
 %desvio estandar de las primeras y ultimas 20 probabilidades parciales:
-fprintf('El desvio estandarde las primeras 20 probabilidades parciales es: %d\n', std(todas_las_probabilidades(1:20)))
+fprintf('El desvío estándar de las primeras 20 iteraciones es: %d\n', std(todas_las_probabilidades(1:20)))
 fprintf('y de las últimas 20 es: %d\n', probabilidad_parcial_ultimos_veinte = std(todas_las_probabilidades(end-20:end)));
 fprintf('\n');
 
 tiempo = toc;
 %Guardo el tic/toc en una variable y lo imprimo por pantalla junto a un string
-fprintf('El tiempo que tomo calcular la probabilidad es: %d\n', tiempo);
+fprintf('El tiempo en segundos que tomó calcular la probabilidad: %d\n', tiempo);
 fprintf('\n----------------------------------------------------\n');
 %-------------------------------------------------------------------------------
 
@@ -49,7 +49,7 @@ tic
 [probabilidad, todas_las_probabilidades] = calcular_fallos_sucesivos(epsilon_b);
 
 % Muestro por pantalla la propabilidad que me dio mi motor
-fprintf('La probabilidad de exito con un Epsilon de 0.01, es: %d\n', probabilidad );
+fprintf('La probabilidad de éxito con un épsilon de 0.01, es: %d\n', probabilidad );
 fprintf('\n');
 
 % Genero el grafico
@@ -63,13 +63,13 @@ ylim([0 1]);
 legend('Evolucion de la probabilidad', 'Probabilidad analitica');
 
 %desvio estandar de las primeras y ultimas 20 probabilidades parciales:
-fprintf('El desvio estandarde las primeras 20 probabilidades parciales es: %d\n', std(todas_las_probabilidades(1:20)))
+fprintf('El desvío estándar de las primeras 20 iteraciones es: %d\n', std(todas_las_probabilidades(1:20)))
 fprintf('y de las últimas 20 es: %d\n', probabilidad_parcial_ultimos_veinte = std(todas_las_probabilidades(end-20:end)));
 fprintf('\n');
 
 tiempo = toc;
 %Guardo el tic/toc en una variable y lo imprimo por pantalla junto a un string
-fprintf('El tiempo que tomo calcular la probabilidad es: %d\n', tiempo);
+fprintf('El tiempo en segundos que tomó calcular la probabilidad: %d\n', tiempo);
 fprintf('\n----------------------------------------------------\n');
 %-------------------------------------------------------------------------------
 
@@ -84,7 +84,7 @@ tic
 [probabilidad, todas_las_probabilidades] = calcular_fallos_sucesivos(epsilon_c);
 
 % Muestro por pantalla la propabilidad que me dio mi motor
-fprintf('La probabilidad de exito con un Epsilon de 0.001, es: %d\n', probabilidad );
+fprintf('La probabilidad de éxito con un épsilon de 0.001, es: %d\n', probabilidad );
 fprintf('\n');
 
 % Genero el grafico
@@ -98,12 +98,12 @@ ylim([0 1]);
 legend('Evolucion de la probabilidad', 'Probabilidad analitica');
 
 %desvio estandar de las primeras y ultimas 20 probabilidades parciales:
-fprintf('El desvio estandarde las primeras 20 probabilidades parciales es: %d\n', std(todas_las_probabilidades(1:20)))
+fprintf('El desvío estándar de las primeras 20 iteraciones es: %d\n', std(todas_las_probabilidades(1:20)))
 fprintf('y de las últimas 20 es: %d\n', probabilidad_parcial_ultimos_veinte = std(todas_las_probabilidades(end-20:end)));
 fprintf('\n');
 
 tiempo = toc;
 %Guardo el tic/toc en una variable y lo imprimo por pantalla junto a un string
-fprintf('El tiempo que tomo calcular la probabilidad es: %d\n', tiempo);
+fprintf('El tiempo en segundos que tomó calcular la probabilidad: %d\n', tiempo);
 fprintf('\n----------------------------------------------------\n');
 %-------------------------------------------------------------------------------
