@@ -27,6 +27,11 @@ ylabel('Probabilidad');
 ylim([0 1]);
 legend('Evolucion de la probabilidad', 'Probabilidad analitica');
 
+%desvio estandar de las primeras y ultimas 20 probabilidades parciales:
+fprintf('El desvio estandarde las primeras 20 probabilidades parciales es: %d\n', std(todas_las_probabilidades(1:20)))
+fprintf('y de las últimas 20 es: %d\n', probabilidad_parcial_ultimos_veinte = std(todas_las_probabilidades(end-20:end)));
+fprintf('\n');
+
 tiempo = toc;
 %Guardo el tic/toc en una variable y lo imprimo por pantalla junto a un string
 fprintf('El tiempo que tomo calcular la probabilidad es: %d\n', tiempo);
@@ -57,6 +62,11 @@ ylabel('Probabilidad');
 ylim([0 1]);
 legend('Evolucion de la probabilidad', 'Probabilidad analitica');
 
+%desvio estandar de las primeras y ultimas 20 probabilidades parciales:
+fprintf('El desvio estandarde las primeras 20 probabilidades parciales es: %d\n', std(todas_las_probabilidades(1:20)))
+fprintf('y de las últimas 20 es: %d\n', probabilidad_parcial_ultimos_veinte = std(todas_las_probabilidades(end-20:end)));
+fprintf('\n');
+
 tiempo = toc;
 %Guardo el tic/toc en una variable y lo imprimo por pantalla junto a un string
 fprintf('El tiempo que tomo calcular la probabilidad es: %d\n', tiempo);
@@ -86,6 +96,11 @@ xlabel('Numero de iteracion');
 ylabel('Probabilidad');
 ylim([0 1]);
 legend('Evolucion de la probabilidad', 'Probabilidad analitica');
+
+%desvio estandar de las primeras y ultimas 20 probabilidades parciales:
+fprintf('El desvio estandarde las primeras 20 probabilidades parciales es: %d\n', std(todas_las_probabilidades(1:20)))
+fprintf('y de las últimas 20 es: %d\n', probabilidad_parcial_ultimos_veinte = std(todas_las_probabilidades(end-20:end)));
+fprintf('\n');
 
 tiempo = toc;
 %Guardo el tic/toc en una variable y lo imprimo por pantalla junto a un string
