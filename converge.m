@@ -1,3 +1,4 @@
+
 function convergio = converge(probabilidad_anterior, probabilidad_actual, epsilon, total_de_tiradas)
 
   % Para que el experimento converja, le vamos a pedir que al menos haya iterado
