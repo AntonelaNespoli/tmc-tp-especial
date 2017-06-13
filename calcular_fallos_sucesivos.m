@@ -16,11 +16,11 @@ function [probabilidad, todas_las_probabilidades] = calcular_fallos_sucesivos(ep
    
     % Pongo mi funcion my_mex_service en una variable y la llamo en las variables
     % intento_1 e intento_2:
-    valor_dni = my_mex_service(38006317);
+    solicitud_permiso = my_mex_service(38006317);
     
     %Pido permiso para disparar dos veces seguidas:
-    intento_1= valor_dni;
-    intento_2= valor_dni;
+    intento_1= solicitud_permiso;
+    intento_2= solicitud_permiso;
     
     % Actualizo la cantidad de experimentos 
     total_de_experimentos = total_de_experimentos+ 1;
